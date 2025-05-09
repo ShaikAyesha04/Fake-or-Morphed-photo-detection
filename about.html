@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FMD - Fake or Morphed Photo Detection</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    
+
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0" style="color: orange;">FMD</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">Blog</a>
+                <a href="service.html" class="nav-item nav-link">Dataset</a>
+               
+                <a href="analyse.html" class="nav-item nav-link">Analyse</a>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+
+            </div>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none">
+                <a href="login.html"><button class="btn btn-primary">Login</button></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Visit Our Blog!!</h1>
+           
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Timeline Section with Icons Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <h1 class="text-center mb-5">Image Processing Workflow</h1>
+        <div class="row g-5">
+
+            <!-- Step 1 -->
+            <div class="col-12 d-flex align-items-center">
+                <div class="flex-shrink-0 bg-primary rounded-circle p-4 me-4">
+                    <i class="fas fa-upload text-white fa-2x"></i>
+                </div>
+                <div>
+                    <h5>Image Acquisition</h5>
+                    <p>Upload or capture an image to start the detection process.</p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="col-12 d-flex align-items-center">
+                <div class="flex-shrink-0 bg-primary rounded-circle p-4 me-4">
+                    <i class="fas fa-sliders-h text-white fa-2x"></i>
+                </div>
+                <div>
+                    <h5>Preprocessing</h5>
+                    <p>Resize, normalize, and clean the image for accurate analysis.</p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="col-12 d-flex align-items-center">
+                <div class="flex-shrink-0 bg-primary rounded-circle p-4 me-4">
+                    <i class="fas fa-search text-white fa-2x"></i>
+                </div>
+                <div>
+                    <h5>Feature Extraction</h5>
+                    <p>Extract important features like patterns, textures, and inconsistencies.</p>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="col-12 d-flex align-items-center">
+                <div class="flex-shrink-0 bg-primary rounded-circle p-4 me-4">
+                    <i class="fas fa-robot text-white fa-2x"></i>
+                </div>
+                <div>
+                    <h5>Classification</h5>
+                    <p>Use AI models to predict if the image is real or fake/morphed.</p>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="col-12 d-flex align-items-center">
+                <div class="flex-shrink-0 bg-primary rounded-circle p-4 me-4">
+                    <i class="fas fa-check-circle text-white fa-2x"></i>
+                </div>
+                <div>
+                    <h5>Result Display</h5>
+                    <p>Display the final result with confidence level to the user.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Timeline Section with Icons End -->
+
+
+  <!-- expkantion start -->
+<!-- Image Processing Steps Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <h1 class="text-center mb-5">Detailed Workflow of Image Processing</h1>
+        <div class="row g-4">
+
+            <!-- Step 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow rounded-4 p-4">
+                    <div class="card-body text-center">
+                        <i class="fas fa-upload fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title mb-3">1. Image Acquisition</h5>
+                        <p class="card-text">The first step involves uploading an image from a device or capturing a real-time photo using a camera. This input acts as the base material for further analysis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow rounded-4 p-4">
+                    <div class="card-body text-center">
+                        <i class="fas fa-sliders-h fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title mb-3">2. Preprocessing</h5>
+                        <p class="card-text">The image is resized, noise is reduced, and the color models are normalized. Preprocessing ensures the image is clean and standardized for the next steps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow rounded-4 p-4">
+                    <div class="card-body text-center">
+                        <i class="fas fa-search fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title mb-3">3. Feature Extraction</h5>
+                        <p class="card-text">Important features like edges, textures, patterns, and inconsistencies are extracted. This helps the system detect small signs of manipulation or forgery.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow rounded-4 p-4">
+                    <div class="card-body text-center">
+                        <i class="fas fa-robot fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title mb-3">4. Classification</h5>
+                        <p class="card-text">Machine learning models or deep learning networks classify the image as either 'Real' or 'Fake/Morphed' based on extracted features and trained data patterns.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow rounded-4 p-4">
+                    <div class="card-body text-center">
+                        <i class="fas fa-check-circle fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title mb-3">5. Result Display</h5>
+                        <p class="card-text">Finally, the prediction result is displayed to the user along with a confidence score, providing clarity on whether the image is authentic or tampered.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Image Processing Steps End -->
+
+  <!-- explanation end -->
+
+   
+
+   
+
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6">
+                <h1 style="color: orange;"><img class="img-fluid me-3" src="img/icon/icon-02-light.png" alt="" style="color: orange;">FMD</h1>
+                <span>This project detects fake or morphed images using ml and deep learning techniques.
+                    It aims to ensure image authenticity and prevent the spread of manipulated media.
+                    
+                </span>
+            </div>
+           
+            <div class="col-md-6">
+                <h5  style="color: orange;">INFO</h5>
+                <p>Stay updated with the latest advancements in image forensics and AI detection tools and to get more info signup.</p>
+                <div class="position-relative">
+              
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 style="color: orange;">Get In Touch</h5>
+                <p><i class="fa fa-map-marker-alt me-3"></i>CSE Department,RK Valley,Kadapa Dist,AP</p>
+                <p><i class="fa fa-phone-alt me-3"></i>+91 8765432923</p>
+                <p><i class="fa fa-envelope me-3"></i>support@fmd.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 style="color: orange;">Quick Links</h5>
+                <a class="btn btn-link" href="about.html">BLOG</a>
+                <a class="btn btn-link" href="service.html">DATASET</a>
+                <a class="btn btn-link" href="analyse.html">ANALYSE</a>
+                <a class="btn btn-link" href="contact.html">CONTACT US</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                
+                <div class="d-flex">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">FMD</a>, All Rights Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By Team ASH | Distributed by CSE Dept.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

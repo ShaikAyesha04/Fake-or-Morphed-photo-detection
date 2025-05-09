@@ -1,0 +1,11 @@
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.zip
+*.pt
+*.h5
+__pycache__/
+node_modules/
+.env
+.DS_Store
